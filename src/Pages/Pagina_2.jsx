@@ -1,6 +1,7 @@
 // Importação do hook useState e useEffect
 import { useState, useEffect } from "react";
 
+
 function Pagina2() {
   // Estado que armazena as informações do país
   const [info, setInfo] = useState(null);
@@ -16,7 +17,7 @@ function Pagina2() {
   }, []); // O array vazio significa que o efeito acontece apenas uma vez
 
   return (
-    <div>
+    <div className="Flex-Colunm">
       <h2>População, Idioma e Densidade Demográfica</h2>
       {/* Verifica se as informações do país estão disponíveis */}
       {info ? (

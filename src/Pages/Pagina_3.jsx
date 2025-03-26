@@ -1,6 +1,7 @@
 // Importação do hook useState e useEffect
 import { useState, useEffect } from "react";
 
+
 function Pagina3() {
   // Estado que armazena as informações do país
   const [info, setInfo] = useState(null);
@@ -16,7 +17,7 @@ function Pagina3() {
   }, []); // O efeito é disparado apenas uma vez, quando o componente é montado
 
   return (
-    <div>
+    <div className="Flex-Colunm">
       <h2>Capital, Região e Moeda</h2>
       {/* Verifica se as informações do país estão presentes */}
       {info ? (

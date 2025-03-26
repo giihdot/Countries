@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 function Pagina1() {
   // Estado que armazena as informações do país
   const [info, setInfo] = useState(null);
@@ -15,7 +16,7 @@ function Pagina1() {
   }, []); // O array vazio significa que o efeito só ocorre quando o componente é montado
 
   return (
-    <div>
+    <div className="Flex-Colunm">
       <h2>Informações Gerais</h2>
       {/* Se as informações do país estiverem disponíveis, exibe-as */}
       {info ? (

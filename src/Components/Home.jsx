@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "../App.css"
 
 function Home() {
   // Estado para armazenar a lista de países
@@ -55,7 +56,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="Flex-Colunm">
       {/* Rótulo do select */}
       <label>Selecione um país:</label>
       {/* Dropdown para selecionar um país */}
