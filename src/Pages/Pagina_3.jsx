@@ -24,8 +24,8 @@ function Pagina3() {
         <>
           {/* Exibe a capital, região e moeda do país */}
           <p>Capital: {info.capital}</p>
-          <p>Região: {info.region}</p>
-          <p>Moeda: {Object.values(info.currencies)[0].name}</p>
+          <p>Ortografia alternativa: {info.altSpellings}</p>
+          <p>Moeda - Simbolo: {Object.values(info.currencies)[0].symbol}</p>
         </>
       ) : (
         // Se não houver informações, exibe uma mensagem

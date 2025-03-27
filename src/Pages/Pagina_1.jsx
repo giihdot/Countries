@@ -22,8 +22,7 @@ function Pagina1() {
       {info ? (
         <>
           <p>Área: {info.area} km²</p>
-          <p>População: {info.population}</p>
-          <p>Capital: {info.capital}</p>
+          <p>Fuso Horário: {info.timezones}</p>
           <p>Região: {info.region}</p>
           <p>Moeda: {Object.values(info.currencies)[0].name}</p>
         </>

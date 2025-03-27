@@ -23,7 +23,7 @@ function Pagina2() {
       {info ? (
         <>
           {/* Exibe a população, idioma e calcula a densidade populacional */}
-          <p>População: {info.population}</p>
+          <p>População: {info.population.toFixed(2)} Hab</p>
           <p>Idioma Principal: {Object.values(info.languages)[0]}</p>
           <p>
             Densidade Populacional: {(

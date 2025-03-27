@@ -24,7 +24,7 @@ function Home() {
         }));
         // Atualiza o estado 'paises' com a lista de países
         setPaises(listaPaises);
-
+        
         // Verifica se há um país salvo no Local Storage e o carrega
         const savedCountry = localStorage.getItem("selectedCountry");
         if (savedCountry) {
@@ -48,7 +48,7 @@ function Home() {
   }
 
   // Função que lida com a mudança no select (quando o usuário escolhe um país)
-  function handleChange(e) {
+  function Mud_Select(e) {
     const selected = e.target.value; // Obtém o nome do país selecionado
     setSelectedPais(selected); // Atualiza o estado do país selecionado
     localStorage.setItem("selectedCountry", selected); // Armazena o país selecionado no Local Storage
@@ -60,7 +60,7 @@ function Home() {
       {/* Rótulo do select */}
       <label>Selecione um país:</label>
       {/* Dropdown para selecionar um país */}
-      <select value={selectedPais} onChange={handleChange}>
+      <select value={selectedPais} onChange={Mud_Select}>
         <option value="">Selecione...</option>
         {/* Itera sobre os países para criar as opções do select */}
         {paises.map((pais, index) => (
