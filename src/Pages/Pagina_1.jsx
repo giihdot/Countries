@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 function Pagina1() {
   // Estado que armazena as informações do país
-  const [info, setInfo] = useState(null);
+  const [info, setInfoPais] = useState(null);
 
   // UseEffect para carregar as informações do país a partir do localStorage
   useEffect(() => {
@@ -11,7 +11,7 @@ function Pagina1() {
     const countryData = localStorage.getItem("countryInfo");
     if (countryData) {
       // Converte os dados do localStorage para um objeto e armazena no estado
-      setInfo(JSON.parse(countryData));
+      setInfoPais(JSON.parse(countryData));
     }
   }, []); // O array vazio significa que o efeito só ocorre quando o componente é montado
 
